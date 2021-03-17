@@ -114,7 +114,7 @@ _loadoutData setVariable ["gpses", ["ItemGPS"]];
 _loadoutData setVariable ["NVGs", []]; //this line determines NVGs -- Array, can contain multiple assets
 _loadoutData setVariable ["binoculars", ["Binocular"]];
 
-_loadoutData setVariable ["uniforms", ["UK3CB_CHD_B_U_CombatSmock01","UK3CB_CHD_B_U_CombatSmock02","UK3CB_CHD_B_U_CombatSmock03","UK3CB_CHD_B_U_CombatSmock04","UK3CB_CHD_B_U_CombatSmock05","UK3CB_CHD_B_U_CombatSmock06","UK3CB_CHD_B_U_CombatSmock07","UK3CB_CHD_B_U_CombatSmock08","UK3CB_CHD_B_U_CombatSmock09","UK3CB_CHD_B_U_CombatSmock10","UK3CB_CHD_B_U_CombatSmock11","UK3CB_CHD_B_U_CombatSmock12","UK3CB_CHD_B_U_CombatSmock13",]];
+_loadoutData setVariable ["uniforms", ["UK3CB_CHD_B_U_CombatSmock01","UK3CB_CHD_B_U_CombatSmock02","UK3CB_CHD_B_U_CombatSmock03","UK3CB_CHD_B_U_CombatSmock04","UK3CB_CHD_B_U_CombatSmock05","UK3CB_CHD_B_U_CombatSmock06","UK3CB_CHD_B_U_CombatSmock07","UK3CB_CHD_B_U_CombatSmock08","UK3CB_CHD_B_U_CombatSmock09","UK3CB_CHD_B_U_CombatSmock10","UK3CB_CHD_B_U_CombatSmock11","UK3CB_CHD_B_U_CombatSmock12","UK3CB_CHD_B_U_CombatSmock13"]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", []];
