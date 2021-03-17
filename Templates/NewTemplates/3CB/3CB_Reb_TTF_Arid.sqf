@@ -12,8 +12,8 @@
 ["vehicleLightUnarmed", "UK3CB_CHC_C_SUV_Armoured"] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightArmed", "UK3CB_NAP_I_BRDM2"] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
 ["vehicleTruck", "UK3CB_NAP_I_Gaz66_Covered"] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehicleAT", "UK3CB_NAP_I_UAZ_AGS30"] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehicleAA", "UK3CB_NAP_I_UAZ_MG"] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleAT", "UK3CB_NAP_I_UAZ_SPG9"] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleAA", "UK3CB_NAP_I_UAZ_AGS30"] call _fnc_saveToTemplate; 		//this line determines cargo trucks -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
 
 ["vehicleBoat", "UK3CB_I_G_Fishing_Boat_SPG9"] call _fnc_saveToTemplate; 	//this line determines transport boats -- Example: ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] -- Array, can contain multiple assets
 ["vehicleRepair", "UK3CB_NAP_I_Ural_Repair"] call _fnc_saveToTemplate; 			//this line determines gun boats -- Example: ["vehiclesGunboats", ["B_Boat_Armed_01_minigun_F"]] -- Array, can contain multiple assets
@@ -28,7 +28,7 @@
 
 ["staticMG", "UK3CB_NAP_I_DSHKM"] call _fnc_saveToTemplate; 					//this line determines static MGs -- Example: ["staticMG", ["B_HMG_01_high_F"]] -- Array, can contain multiple assets
 ["staticAT", "UK3CB_NAP_I_SPG9"] call _fnc_saveToTemplate; 					//this line determinesstatic ATs -- Example: ["staticAT", ["B_static_AT_F"]] -- Array, can contain multiple assets
-["staticAA", "UK3CB_NAP_I_AGS"] call _fnc_saveToTemplate; 					//this line determines static AAs -- Example: ["staticAA", ["B_static_AA_F"]] -- Array, can contain multiple assets
+["staticAA", "UK3CB_NAP_I_UAZ_AGS30"] call _fnc_saveToTemplate; 					//this line determines static AAs -- Example: ["staticAA", ["B_static_AA_F"]] -- Array, can contain multiple assets
 ["staticMortar", "rhsgref_ins_g_2b14"] call _fnc_saveToTemplate; 				//this line determines static mortars -- Example: ["staticMortar", ["B_Mortar_01_F"]] -- Array, can contain multiple assets
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
@@ -60,7 +60,7 @@ private _initialRebelEquipment = [
 "rhs_weap_Izh18",
 "rhs_weap_rpg7","rhs_weap_rshg2",
 "rhs_weap_rpg26",
-"rhs_mag_762x25_8","rhs_mag_9x18_8_57N1815","rhsgref_5Rnd_762x54_m38","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhs_rpg7_PG7VL_mag",
+"rhs_mag_762x25_8","rhs_mag_9x18_8_57N1815","rhsgref_5Rnd_762x54_m38","rhs_gref_30Rnd_792x33_SmE_StG","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhs_rpg7_PG7VL_mag",
 "rhs_mag_rgd5","rhs_mag_f1","rhs_mag_rdg2_black","rhs_mag_rdg2_white",
 "rhs_medic_bag","rhs_sidor","rhs_rpg_empty","UK3CB_B_Bedroll_Backpack","UK3CB_CW_SOV_O_LATE_B_Sidor_RIF","UK3CB_CW_SOV_O_EARLY_B_Sidor_RIF","UK3CB_CHD_B_B_Sidor_MD","UK3CB_CHD_B_B_Sidor_RIF_FLORA",
 "UK3CB_V_CW_Chestrig","UK3CB_V_CW_Chestrig_2_Small","UK3CB_V_Belt_KHK","UK3CB_V_Belt_Rig_KHK","UK3CB_V_Belt_Rig_Lite_KHK","UK3CB_V_Pouch","UK3CB_V_Chestrig_TKA_OLI","UK3CB_V_Chestrig_2_Small_OLI","UK3CB_V_Chestrig_TKA_BRUSH","UK3CB_V_Chestrig_Lite_KHK","UK3CB_V_Chestrig_Lite_2_Small_KHK",
