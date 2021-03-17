@@ -700,10 +700,10 @@ if (hasACRE) then {initialRebelEquipment append ["ACRE_PRC343","ACRE_PRC148","AC
 //    UNIT AND VEHICLE PRICES    ///
 ////////////////////////////////////
 [2,"Creating pricelist",_fileName] call A3A_fnc_log;
-{server setVariable [_x,50,true]} forEach SDKMil;
-{server setVariable [_x,75,true]} forEach (sdkTier1 - SDKMil);
-{server setVariable [_x,100,true]} forEach  sdkTier2;
-{server setVariable [_x,150,true]} forEach sdkTier3;
+{server setVariable [_x,100,true]} forEach SDKMil;
+{server setVariable [_x,125,true]} forEach (sdkTier1 - SDKMil);
+{server setVariable [_x,170,true]} forEach  sdkTier2;
+{server setVariable [_x,200,true]} forEach sdkTier3;
 //{timer setVariable [_x,0,true]} forEach (vehAttack + vehNATOAttackHelis + [vehNATOPlane,vehNATOPlaneAA,vehCSATPlane,vehCSATPlaneAA] + vehCSATAttackHelis + vehAA + vehMRLS);
 {timer setVariable [_x,3,true]} forEach [staticATOccupants,staticAAOccupants];
 {timer setVariable [_x,6,true]} forEach [staticATInvaders,staticAAInvaders];
@@ -729,15 +729,15 @@ timer setVariable [vehNATOMRLS,0,true];
 timer setVariable [vehCSATMRLS,5,true];
 
 server setVariable [civCar,200,true];													//200
-server setVariable [civTruck,600,true];													//600
+server setVariable [civTruck,500,true];													//600
 server setVariable [civHeli,5000,true];													//5000
 server setVariable [civBoat,200,true];													//200
 server setVariable [vehSDKBike ,50,true];												//50
-server setVariable [vehSDKLightUnarmed,200,true];										//200
-server setVariable [vehSDKTruck,300,true];											//300
-{server setVariable [_x,700,true]} forEach [vehSDKLightArmed,vehSDKAT];
-{server setVariable [_x,400,true]} forEach [SDKMGStatic,vehSDKBoat,vehSDKRepair];			//400
-{server setVariable [_x,800,true]} forEach [SDKMortar,staticATteamPlayer,staticAAteamPlayer];			//800
+server setVariable [vehSDKLightUnarmed,1000,true];										//200
+server setVariable [vehSDKTruck,500,true];											//300
+{server setVariable [_x,2500,true]} forEach [vehSDKLightArmed,vehSDKAT];
+{server setVariable [_x,700,true]} forEach [SDKMGStatic,vehSDKBoat,vehSDKRepair];			//400
+{server setVariable [_x,1750,true]} forEach [SDKMortar,staticATteamPlayer,staticAAteamPlayer];			//800
 
 ///////////////////////
 //     GARRISONS    ///
