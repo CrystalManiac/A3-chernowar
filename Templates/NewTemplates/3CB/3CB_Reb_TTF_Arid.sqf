@@ -60,7 +60,7 @@ private _initialRebelEquipment = [
 "rhs_weap_Izh18",
 "rhs_weap_rpg7","rhs_weap_rshg2",
 "rhs_weap_rpg26",
-"rhs_mag_762x25_8","rhs_mag_9x18_8_57N1815","rhsgref_5Rnd_762x54_m38","rhs_gref_30Rnd_792x33_SmE_StG","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhs_rpg7_PG7VL_mag",
+"rhs_mag_762x25_8","rhs_mag_9x18_8_57N181S","rhsgref_5Rnd_762x54_m38","rhsgref_30Rnd_792x33_SmE_StG","rhsgref_1Rnd_00Buck","rhsgref_1Rnd_Slug","rhs_rpg7_PG7VL_mag",
 "rhs_mag_rgd5","rhs_mag_f1","rhs_mag_rdg2_black","rhs_mag_rdg2_white",
 "rhs_medic_bag","rhs_sidor","rhs_rpg_empty","UK3CB_B_Bedroll_Backpack","UK3CB_CW_SOV_O_LATE_B_Sidor_RIF","UK3CB_CW_SOV_O_EARLY_B_Sidor_RIF","UK3CB_CHD_B_B_Sidor_MD","UK3CB_CHD_B_B_Sidor_RIF_FLORA",
 "UK3CB_V_CW_Chestrig","UK3CB_V_CW_Chestrig_2_Small","UK3CB_V_Belt_KHK","UK3CB_V_Belt_Rig_KHK","UK3CB_V_Belt_Rig_Lite_KHK","UK3CB_V_Pouch","UK3CB_V_Chestrig_TKA_OLI","UK3CB_V_Chestrig_2_Small_OLI","UK3CB_V_Chestrig_TKA_BRUSH","UK3CB_V_Chestrig_Lite_KHK","UK3CB_V_Chestrig_Lite_2_Small_KHK",
