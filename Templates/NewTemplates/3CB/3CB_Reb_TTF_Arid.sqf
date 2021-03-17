@@ -5,7 +5,7 @@
 ["name", "NAPA"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
 ["flag", "Flag_NAP"] call _fnc_saveToTemplate; 						//this line determines the flag -- Example: ["flag", "Flag_NATO_F"] - ENTER ONLY ONE OPTION
-["flagTexture", "\UK3CB_Factions\addons\UK3CB_Factions_NAP\Flag\nap_i_flag_co.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
+["flagTexture", "\A3\Data_F\Flags\flag_green_CO.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
 ["flagMarkerType", ""] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 
 ["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
@@ -114,7 +114,7 @@ _loadoutData setVariable ["gpses", ["ItemGPS"]];
 _loadoutData setVariable ["NVGs", []]; //this line determines NVGs -- Array, can contain multiple assets
 _loadoutData setVariable ["binoculars", ["Binocular"]];
 
-_loadoutData setVariable ["uniforms", ["UK3CB_TKM_I_U_01","UK3CB_TKM_I_U_01_B","UK3CB_TKM_I_U_01_C","UK3CB_TKM_I_U_03","UK3CB_TKM_I_U_03_B","UK3CB_TKM_I_U_03_C","UK3CB_TKM_I_U_04","UK3CB_TKM_I_U_04_B","UK3CB_TKM_I_U_04_C","UK3CB_TKM_I_U_05","UK3CB_TKM_I_U_05_B","UK3CB_TKM_I_U_05_C","UK3CB_TKM_I_U_06","UK3CB_TKM_I_U_06_B","UK3CB_TKM_I_U_06_C"]];
+_loadoutData setVariable ["uniforms", ["UK3CB_CHD_B_U_CombatSmock01","UK3CB_CHD_B_U_CombatSmock02","UK3CB_CHD_B_U_CombatSmock03","UK3CB_CHD_B_U_CombatSmock04","UK3CB_CHD_B_U_CombatSmock05","UK3CB_CHD_B_U_CombatSmock06","UK3CB_CHD_B_U_CombatSmock07","UK3CB_CHD_B_U_CombatSmock08","UK3CB_CHD_B_U_CombatSmock09","UK3CB_CHD_B_U_CombatSmock10","UK3CB_CHD_B_U_CombatSmock11","UK3CB_CHD_B_U_CombatSmock12","UK3CB_CHD_B_U_CombatSmock13",]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", []];

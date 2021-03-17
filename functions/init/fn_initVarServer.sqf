@@ -728,16 +728,18 @@ timer setVariable [vehCSATPlaneAA,10,true];
 timer setVariable [vehNATOMRLS,0,true];
 timer setVariable [vehCSATMRLS,5,true];
 
-server setVariable [civCar,200,true];													//200
-server setVariable [civTruck,500,true];													//600
-server setVariable [civHeli,5000,true];													//5000
-server setVariable [civBoat,200,true];													//200
-server setVariable [vehSDKBike ,50,true];												//50
-server setVariable [vehSDKLightUnarmed,1000,true];										//200
-server setVariable [vehSDKTruck,500,true];											//300
-{server setVariable [_x,2500,true]} forEach [vehSDKLightArmed,vehSDKAT];
-{server setVariable [_x,700,true]} forEach [SDKMGStatic,vehSDKBoat,vehSDKRepair];			//400
-{server setVariable [_x,1750,true]} forEach [SDKMortar,staticATteamPlayer,staticAAteamPlayer];			//800
+server setVariable [civCar,200,true];													//def200
+server setVariable [civTruck,500,true];													//def600
+server setVariable [civHeli,5000,true];													//def5000
+server setVariable [civBoat,200,true];													//def200
+server setVariable [vehSDKBike ,50,true];												//def50
+server setVariable [vehSDKLightUnarmed,750,true];										//def200
+server setVariable [vehSDKTruck,500,true];											//def300
+server setVariable [vehSDKLightArmed,2500,true];
+server setVariable [vehSDKAT,750,true];
+server setVariable [SDKMortar,1750,true];
+{server setVariable [_x,700,true]} forEach [SDKMGStatic,vehSDKBoat,vehSDKRepair];			//def400
+{server setVariable [_x,800,true]} forEach [staticATteamPlayer,staticAAteamPlayer];			//def800
 
 ///////////////////////
 //     GARRISONS    ///
