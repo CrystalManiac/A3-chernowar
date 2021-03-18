@@ -44,7 +44,7 @@ class Params
         title = "Game Mode - Do NOT change this mid mission";
         values[] = {9999,1,2,3};
         texts[] = {"Default (Reb vs Gov vs Inv)","Reb vs Gov vs Inv","Reb vs Gov & Inv","Reb vs Gov"};
-        default = 9999;
+        default = 3;
     };
     class autoSave
     {
@@ -58,42 +58,42 @@ class Params
         title = "Time between autosaves (in minutes)";
         values[] = {9999,600,1200,1800,3600,5400};
         texts[] = {"Default (60)","10","20","30","60","90"};
-        default = 9999;
+        default = 1200;
     };
     class membership
     {
         title = "Enable Server Membership";
         values[] = {9999,1,0};
         texts[] = {"Default (Yes)","Yes","No"};
-        default = 9999;
+        default = 0;
     };
     class switchComm
     {
         title = "Enable Commander Switch (highest ranked player)";
         values[] = {9999,1,0};
         texts[] = {"Default (Yes)","Yes","No"};
-        default = 9999;
+        default = 0;
     };
     class tkPunish
     {
         title = "Enable Teamkill Punish";
         values[] = {9999,1,0};
         texts[] = {"Default (Yes)","Yes","No"};
-        default = 9999;
+        default = 0;
     };
     class mRadius
     {
         title = "Max distance from HQ for tasks";
         values[] = {9999,2000,4000,6000,8000,10000,12000};
         texts[] = {"Default (4000)","2000","4000","6000","8000","10000","12000"};
-        default = 9999;
+        default = 2000;
     };
     class allowPvP
     {
         title = "Allow PvP Slots";
         values[] = {9999,1,0};
         texts[] = {"Default (Yes)","Yes","No"};
-        default = 9999;
+        default = 0;
     };
     class pMarkers
     {
@@ -107,7 +107,7 @@ class Params
         title = "Mission Difficulty";
         values[] = {9999,1,2,3};
         texts[] = {"Default (Normal)","Easy","Normal","Hard"};
-        default = 9999;
+        default = 3;
     };
     class unlockItem
     {
@@ -156,7 +156,7 @@ class Params
         title = "Max personal garage slots";
         values[] = {9999,0,2,5,10};
         texts[] = {"Default (2)","Unlimited","2","5","10"};
-        default = 9999;
+        default = 5;
     };
     class allowFT
     {
@@ -170,7 +170,7 @@ class Params
         title = "Enable Napalm Bombing for AI";
         values[] = {9999,0,1};
         texts[] = {"Default (No)","No","Yes"};
-        default = 9999;
+        default = 1;
     };
     class teamSwitchDelay
     {
@@ -184,21 +184,21 @@ class Params
         title = "Do Unlocked Weapons Automatically Unlock Their Standard Magazine?";
         values[] = {9999,1,0};
         texts[] = {"Default (No)","Yes","No"};
-        default = 9999;
+        default = 1;
     };
     class allowGuidedLaunchers
     {
         title = "Should Guided Launchers become unlocked?";
         values[] = {9999,1,0};
         texts[] = {"Default (No)","Yes","No"};
-        default = 9999;
+        default = 1;
     };
     class allowUnlockedExplosives
     {
         title = "Should Explosives become unlocked?";
         values[] = {9999,1,0};
         texts[] = {"Default (No)","Yes","No"};
-        default = 9999;
+        default = 1;
     };
     class startWithLongRangeRadio
     {
