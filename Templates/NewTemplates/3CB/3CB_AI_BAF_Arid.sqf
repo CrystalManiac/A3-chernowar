@@ -372,7 +372,7 @@ _militiaLoadoutData setVariable ["rifles", [
 ["rhs_weap_ak74m_npz", "", "", "", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["rhs_weap_ak74m_gp25", "UK3CB_BAF_SFFH", "", "UK3CB_BAF_SUSAT", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], ["rhs_VOG25", "rhs_VG400P_white"], ""]
+["rhs_weap_ak74m_gp25", "", "", "", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], ["rhs_VOG25", "rhs_VG400P_white"], ""]
 ]];
 
 _militiaLoadoutData setVariable ["carbines", [
