@@ -52,9 +52,9 @@
 ["uavsPortable", ["B_UAV_01_F"]] call _fnc_saveToTemplate; 				//this line determines portable UAVs -- Example: ["uavsPortable", ["B_UAV_01_F"]] -- Array, can contain multiple assets
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A_DDPM"]] call _fnc_saveToTemplate; //this line determines lightly armed militia vehicles -- Example: ["vehiclesMilitiaLightArmed", ["B_G_Offroad_01_armed_F"]] -- Array, can contain multiple assets
-["vehiclesMilitiaTrucks", ["UK3CB_BAF_MAN_HX60_Cargo_Sand_A_DDPM"]] call _fnc_saveToTemplate; 	//this line determines militia trucks (unarmed) -- Example: ["vehiclesMilitiaTrucks", ["B_G_Van_01_transport_F"]] -- Array, can contain multiple assets
-["vehiclesMilitiaCars", ["UK3CB_BAF_LandRover_Soft_FFR_Sand_A_DDPM"]] call _fnc_saveToTemplate; 		//this line determines militia cars (unarmed) -- Example: ["vehiclesMilitiaCars", ["	B_G_Offroad_01_F"]] -- Array, can contain multiple assets
+["vehiclesMilitiaLightArmed", ["rhs_tigr_sts_vmf"]] call _fnc_saveToTemplate; //this line determines lightly armed militia vehicles -- Example: ["vehiclesMilitiaLightArmed", ["B_G_Offroad_01_armed_F"]] -- Array, can contain multiple assets
+["vehiclesMilitiaTrucks", ["C_Van_02_transport_F"]] call _fnc_saveToTemplate; 	//this line determines militia trucks (unarmed) -- Example: ["vehiclesMilitiaTrucks", ["B_G_Van_01_transport_F"]] -- Array, can contain multiple assets
+["vehiclesMilitiaCars", ["C_Van_02_transport_F"]] call _fnc_saveToTemplate; 		//this line determines militia cars (unarmed) -- Example: ["vehiclesMilitiaCars", ["	B_G_Offroad_01_F"]] -- Array, can contain multiple assets
 
 ["vehiclesPolice", ["UK3CB_CPD_B_Lada", "UK3CB_CPD_B_UAZ_Closed", "UK3CB_CPD_B_Gaz24", "UK3CB_CPD_B_YAVA"]] call _fnc_saveToTemplate; 			//this line determines police cars -- Example: ["vehiclesPolice", ["B_GEN_Offroad_01_gen_F"]] -- Array, can contain multiple assets
 
@@ -354,8 +354,7 @@ _policeLoadoutData setVariable ["SMGs", [
 ["rhs_weap_savz61", "", "", "", ["rhsgref_20rnd_765x17_vz61"], [], ""]
 ]];
 _policeLoadoutData setVariable ["sidearms", [
-["rhs_weap_makarov_pm", "", "", "", ["rhs_mag_9x18_8_57N181S"], [], ""],
-["rhs_weap_pya", "", "", "", ["rhs_mag_9x19_17"], [], ""]
+["rhs_weap_makarov_pm", "", "", "", ["rhs_mag_9x18_8_57N181S"], [], ""]
 ]];
 
 ////////////////////////////////
@@ -363,36 +362,38 @@ _policeLoadoutData setVariable ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData; // touch and shit breaks
-_militiaLoadoutData setVariable ["uniforms", ["UK3CB_BAF_U_Smock_DDPM"]];		//this line determines uniforms for militia loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
-_militiaLoadoutData setVariable ["vests", ["UK3CB_BAF_V_PLCE_Webbing_DDPM"]];			//this line determines vests for militia loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
-_militiaLoadoutData setVariable ["backpacks", ["UK3CB_BAF_B_Kitbag_TAN", "UK3CB_BAF_B_Carryall_TAN", "UK3CB_BAF_B_Bergen_TAN_Rifleman_A", "UK3CB_BAF_B_Bergen_TAN_Rifleman_B"]];		//this line determines backpacks for militia loadouts -- Example: ["B_AssaultPack_mcamo", "B_Kitbag_mcamo"] -- Array, can contain multiple assets
-_militiaLoadoutData setVariable ["helmets", ["UK3CB_BAF_H_Wool_Hat"]];
+_militiaLoadoutData setVariable ["uniforms", ["UK3CB_TKP_I_U_CIB_CombatUniform_DBLU"]];		//this line determines uniforms for militia loadouts -- Example: ["U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt"] -- Array, can contain multiple assets
+_militiaLoadoutData setVariable ["vests", ["UK3CB_CPD_B_V_6b23_ml_BLU_02"]];			//this line determines vests for militia loadouts -- Example: ["V_PlateCarrierSpec_mtp", "V_PlateCarrierGL_mtp"] -- Array, can contain multiple assets
+_militiaLoadoutData setVariable ["backpacks", ["UK3CB_CPD_B_B_ASS_BLU"]];		//this line determines backpacks for militia loadouts -- Example: ["B_AssaultPack_mcamo", "B_Kitbag_mcamo"] -- Array, can contain multiple assets
+_militiaLoadoutData setVariable ["helmets", ["rhs_altyn_novisor_bala", "rhs_altyn_novisor_ess_bala", "rhs_altyn_visordown", "rhs_altyn_bala"]];
 
 _militiaLoadoutData setVariable ["rifles", [
-["UK3CB_BAF_L85A2", "UK3CB_BAF_SFFH", "", "UK3CB_BAF_SUSAT", ["UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T"], [], ""]
+["rhs_weap_ak74m", "", "", "", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], [], ""],
+["rhs_weap_ak74m_npz", "", "", "", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["grenadeLaunchers", [
-["UK3CB_BAF_L85A2_UGL", "UK3CB_BAF_SFFH", "", "UK3CB_BAF_SUSAT", ["UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T"], ["UK3CB_BAF_1Rnd_HE_Grenade_Shell", "UK3CB_BAF_1Rnd_HEDP_Grenade_Shell", "UK3CB_BAF_1Rnd_Smoke_Grenade_shell"], ""]
+["rhs_weap_ak74m_gp25", "UK3CB_BAF_SFFH", "", "UK3CB_BAF_SUSAT", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], ["rhs_VOG25", "rhs_VG400P_white"], ""]
 ]];
 
 _militiaLoadoutData setVariable ["carbines", [
-["UK3CB_BAF_L22", "", "", "", ["UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T"], [], ""]
+["rhs_weap_ak105", "", "", "", ["rhs_30Rnd_545x39_7N10_AK", "rhs_30Rnd_545x39_7N22_AK"], [], ""],
+["rhs_weap_asval_grip_npz", "", "", "", ["rhs_20Rnd_9x39mm_SP5","rhs_20Rnd_9x39mm_SP6"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["UK3CB_BAF_L7A2", "", "", "", ["UK3CB_BAF_762_100Rnd"], ["UK3CB_BAF_762_100Rnd", "UK3CB_BAF_762_100Rnd_T"], ""]
+["UK3CB_RPK", "", "", "", ["rhs_75Rnd_762x39mm"], ["rhs_75Rnd_762x39mm", "rhs_75Rnd_762x39mm_tracer"], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
-["UK3CB_BAF_L86A3", "UK3CB_BAF_SFFH", "UK3CB_BAF_LLM_IR_Black", "UK3CB_BAF_SUSAT", ["UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd", "UK3CB_BAF_556_30Rnd_T"], [], ""]
+["rhs_weap_svdp", "", "", ["rhs_acc_pso1m2", "rhs_acc_pso1m21"], ["rhs_10Rnd_762x54mmR_7N1", "rhs_10Rnd_762x54mmR_7N14"], [], ""]
 ]];
 _militiaLoadoutData setVariable ["sidearms", [
-["UK3CB_BAF_L9A1", "", "", "", ["UK3CB_BAF_9_13Rnd"], [], ""]
+["rhs_weap_pya", "", "", "", ["rhs_mag_9x19_17"], [], ""]
 ]];
 
 _militiaLoadoutData setVariable ["lightATLaunchers", [
-["rhs_weap_m72a7"]
+["rhs_weap_rshg2"]
 ]];
 _militiaLoadoutData setVariable ["ATLaunchers", [
-["rhs_weap_maaws", "", "", "", ["rhs_mag_maaws_HEAT", "rhs_mag_maaws_HE", "rhs_mag_maaws_HEDP"], [], ""]
+
 ]];
 
 //////////////////////////
